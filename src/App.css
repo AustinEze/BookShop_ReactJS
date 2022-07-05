@@ -4,6 +4,7 @@
   margin:0;
   list-style-type: none;
   text-decoration: none;
+  font-family: Oswald, sans-serif;
 }
 
 .App {
@@ -18,10 +19,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 2em;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -34,4 +36,23 @@
   display: flex;
   flex-direction: row;
   gap: 5em;
+}
+
+.cart-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4em;
+}
+
+/* .header-h3{
+  display:flex;
+  flex-direction: row;
+} */
+.nav-item{
+  color: rgb(22, 22, 22);
+}
+
+.nav-item:hover{
+  color:rgb(160, 160, 160);
 }
