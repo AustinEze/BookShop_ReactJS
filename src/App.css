@@ -7,6 +7,14 @@
   font-family: Oswald, sans-serif;
 }
 
+html {
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -18,7 +26,7 @@
 } */
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;  
   min-height: 2em;
   display: flex;
   align-items: center;
@@ -45,14 +53,63 @@
   gap: 0.4em;
 }
 
-/* .header-h3{
-  display:flex;
-  flex-direction: row;
-} */
 .nav-item{
-  color: rgb(22, 22, 22);
+  color: white;
 }
 
 .nav-item:hover{
-  color:rgb(160, 160, 160);
+  color:black;
+}
+
+.ItemCounter-background{
+  margin-top: 1rem;
+  background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+  border-radius: 50px;
+  padding: 1rem;
+  width: 250px;
+}
+
+.ItemCounter-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+
+.ItemCounter-container p{
+  color: white;
+  margin: 1rem;
+}
+
+.ItemCounter-container button {
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  min-width: 20px;
+  color: white;
+}
+
+.ItemCounter-container button:hover{
+  background-color: rgb(31, 31, 31);
+  border-radius: 50px;
+  opacity: 0.9;
+}
+
+.ItemCounter-position{
+  display: flex;
+  justify-content: center;
+}
+
+.ItemCounter-add {
+  color:white;
+  width: 150px;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+}
+
+.ItemCounter-add:hover{
+  background-color: rgb(31, 31, 31);
+  border-radius: 50px;
+  opacity: 0.8;
 }
