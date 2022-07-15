@@ -1,8 +1,7 @@
 import './App.css';
 import { Navbar } from './components/Navbar';
-// import ItemCount  from './components/ItemsFolder/ItemCount';
-// import Item from './components/ItemsFolder/ItemList';
 import ItemListContainer from './components/ItemsFolder/ItemListContainer'
+import ItemDetailContainer from './components/ItemsFolder/ItemDetailContainer'
 
 function App() {
   const onAdd = (param) => { console.log('La cantidad comprada es de: ' + param) }
@@ -15,6 +14,7 @@ function App() {
       </header>
       <div>
         <ItemListContainer />
+        <ItemDetailContainer />
       </div>
     </div>
   );

@@ -18,8 +18,6 @@ const items =[
   }
 ]
 
-
-
 export const ItemListContainer = () => {
   
   const [data, setData] = useState([]);
