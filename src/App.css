@@ -61,27 +61,29 @@ html {
   color:black;
 }
 
-.ItemCounter-background{
+.Itemcount-background{
   margin-top: 1rem;
+  /* GRADIENTE BASE CONTAINERS */
   background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+  /* ******************************* */
   border-radius: 50px;
   padding: 1rem;
   width: 250px;
 }
 
-.ItemCounter-container{
+.Itemcount-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; 
 }
 
-.ItemCounter-container p{
+.Itemcount-container p{
   color: white;
   margin: 1rem;
 }
 
-.ItemCounter-container button {
+.Itemcount-container button {
   background: transparent;
   border: none;
   font-size: 1.5em;
@@ -89,18 +91,18 @@ html {
   color: white;
 }
 
-.ItemCounter-container button:hover{
+.Itemcount-container button:hover{
   background-color: rgb(31, 31, 31);
   border-radius: 50px;
   opacity: 0.9;
 }
 
-.ItemCounter-position{
+.Itemcount-position{
   display: flex;
   justify-content: center;
 }
 
-.ItemCounter-add {
+.Itemcount-add {
   color:white;
   width: 150px;
   text-transform: uppercase;
@@ -108,8 +110,41 @@ html {
   background: transparent;
 }
 
-.ItemCounter-add:hover{
+.Itemcount-add:hover{
   background-color: rgb(31, 31, 31);
   border-radius: 50px;
   opacity: 0.8;
 }
+
+.div-books{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* .books-ul{
+  display: flex;
+
+  
+} */
+
+.books-ul img{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+
+
+
+
+
+/* 
+.book-c img {
+  
+} */
+
+/* .book-c h3, p {
+  display: flex;
+  flex-direction: column;
+} */
