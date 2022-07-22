@@ -44,6 +44,7 @@ html {
   gap: 5em;
 }
 
+
 .cart-container{
   display: flex;
   flex-direction: row;
@@ -138,4 +139,26 @@ html {
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+.categoria-item{
+  color: white;
+  background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+
+.categoria-item:hover{
+  color:black;
+  
+}
+
+.categoria-container{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  line-height: 50px;
+
 }
