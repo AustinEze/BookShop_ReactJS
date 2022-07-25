@@ -28,8 +28,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
                     <button className="count-item" onClick= { add } >+</button>
                 </div>
                 <button className='Itemcount-add' onClick={() => onAdd(count)}>Agregar al carrito</button>
-            </div>
-    
+            </div>    
         </div>
         
     </div>
@@ -37,9 +36,3 @@ const ItemCount = ({initial, stock, onAdd}) => {
 }    
 
 export default ItemCount;
-
-// export default ItemCount = () => {
-
-// }
-
-

@@ -127,19 +127,123 @@ html {
   width: 300px;
 }
 
-.detail-container{
+/* .detail-container{
   width: 500px;
-}
-.detail-container img{
-  width: 500px;
+} */
+.detail-content1 img{
+  width: 300px;
 }
 
 .item-detail-container{
-  margin-top: 3rem;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
 }
+
+.detail-content1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  gap:6em;
+}
+
+.detail-content3-center{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.detail-p, .detail-h4 {
+  text-align: center;
+  width: 800px;
+}
+
+.GoToCart{
+  margin-top: 1rem;
+  /* GRADIENTE BASE CONTAINERS */
+  background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+  /* ******************************* */
+  border-radius: 50px;
+  padding: 1rem;
+  width: 250px;
+}
+
+.GoToCart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+
+.GoToCart{
+  color: white;
+  margin: 1rem;
+}
+
+
+
+/* .detail-img{
+  grid-area: detail-img;
+}
+.detail-itemcount{
+  grid-area: detail-itemcount;
+}
+.detail-h1{
+  grid-area: detail-h1;
+}
+
+.detail-h3{
+  grid-area: detail-h3;
+}
+.detail-h4{
+  grid-area: detail-h4;
+}
+.detail-p{
+  grid-area: detail-p;
+  width: 500px;
+}
+.detail-pr{
+  grid-area: detail-pr;
+}
+
+.grid-detail{
+  display: grid;
+  grid-template-areas:
+  'detail-img detail-img detail-img detail-img detail-itemcount detail-itemcount '
+  
+  ;
+  align-items: center;
+} */
+
+
+
+
+
+
+
+/* .detail-img-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+} */
+/* 
+.grid-detail{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "detail-img detail-h1 detail-h1"
+    "detail-itemcount detail-h3";
+} */
+/* .detail-itemcount{
+  margin-left: 5rem;
+} */
+
+
+
 
 .categoria-item{
   color: white;
