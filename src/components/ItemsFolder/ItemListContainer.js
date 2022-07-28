@@ -9,7 +9,8 @@ const items =[
     img: 'https://www.penguinlibros.com/ar/1519312-thickbox_default/morir-lo-necesario.jpg',
     name: 'Morir lo necesario',
     autor: 'Alejandro G. Roemmers',
-    category: 'Policiales-Oscuros'
+    category: 'Policiales-Oscuros',
+    price: 2200   
   },
   {
     id: 2,
@@ -17,13 +18,15 @@ const items =[
     name: 'El toque de midas',
     autor: 'Donald J. Trump & Robert T. Kiyosaki',
     category: 'Emprendimiento',
+    price: 2800
   },
   {
     id: 3,
     img: 'https://www.penguinlibros.com/ar/1384314-thickbox_default/un-asunto-pendiente.jpg',
     name: 'Un asunto pendiente',
     autor: 'John Katzenbach',
-    category: 'Policiales-Oscuros'
+    category: 'Policiales-Oscuros',
+    price: 1850 
   }
 ]
 
