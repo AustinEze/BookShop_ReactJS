@@ -1,10 +1,10 @@
 import React from 'react'
-import { useCartContext } from './CartContext'
+import { CartContext } from './CartContext'
 import { Link } from 'react-router-dom'
 import ItemCart from './ItemCart'
 
 const Cart = () => {
-  const { cart, totalPrice } = useCartContext();
+  const { cart, totalPrice } = CartContext();
 
   if (cart.length === 0){
     return(
