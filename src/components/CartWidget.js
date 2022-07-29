@@ -8,7 +8,7 @@ export const CartWidget = () => {
   return (
     <div className="cart-container">
       <AiOutlineShoppingCart />
-      <span>{ totalProducts() || '' }</span>
+      <span>{ totalProducts || '' }</span>
     </div>
   )
 }
