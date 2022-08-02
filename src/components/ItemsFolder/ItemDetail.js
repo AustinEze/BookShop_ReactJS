@@ -5,7 +5,7 @@ import { useCartContext } from "../CartContext";
 
 
 export const ItemDetail = ({ data }) => {
-  const addProduct = useCartContext
+  const { addProduct } = useCartContext();
   
   
   const [goToCart, setGoToCart] = useState(false)

@@ -21,9 +21,10 @@ const Cart = () => {
       {
         cart.map(product => <ItemCart key={product.id} product={product} />)
       }
-      <p>
-        total: { totalPrice() }
+      <p className='total-cart'>
+        Total: $ { totalPrice() }
       </p>
+      <p className='total-cart-nota'>Nota: puede seguir comprando si regresa a "home" o "categorias", sus productos en el carrito quedarán guardados.</p>
     </>
   )
 }
