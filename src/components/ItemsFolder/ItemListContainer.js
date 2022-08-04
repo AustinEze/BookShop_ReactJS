@@ -1,34 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import {getFirestore, collection, getDocs, query, where} from 'firebase/firestore'
 
-const items =[
-  // ITEMS
-  {
-    id: 1,
-    img: 'https://www.penguinlibros.com/ar/1519312-thickbox_default/morir-lo-necesario.jpg',
-    name: 'Morir lo necesario',
-    autor: 'Alejandro G. Roemmers',
-    category: 'Policiales-Oscuros',
-    price: 2200   
-  },
-  {
-    id: 2,
-    img: 'https://www.penguinlibros.com/ar/910383-thickbox_default/el-toque-de-midas.jpg',
-    name: 'El toque de midas',
-    autor: 'Donald J. Trump & Robert T. Kiyosaki',
-    category: 'Emprendimiento',
-    price: 2800
-  },
-  {
-    id: 3,
-    img: 'https://www.penguinlibros.com/ar/1384314-thickbox_default/un-asunto-pendiente.jpg',
-    name: 'Un asunto pendiente',
-    autor: 'John Katzenbach',
-    category: 'Policiales-Oscuros',
-    price: 1850 
-  }
-]
 
 export const ItemListContainer = () => {
   
@@ -36,19 +10,27 @@ export const ItemListContainer = () => {
 
   const {categoriaId} = useParams(); 
 
-  useEffect(() => {
-    const getData = new Promise(resolve => {
-      setTimeout(() =>{
-        resolve (items)
-      }, 3000) 
-    });
-    if(categoriaId){
-      getData.then(res => setData(res.filter(items => items.category === categoriaId)));
-    } 
-    else{
-      getData.then(res => setData(res))
-    }
-  }, [categoriaId])
+	useEffect(() => {
+		const querydb = getFirestore();
+		const queryCollection = collection(querydb, "products");
+		if (categoriaId) {
+			const queryFilter = query(
+				queryCollection,
+				where("category", "==", categoriaId),
+			);
+			getDocs(queryFilter).then((res) =>
+				setData(
+					res.docs.map((product) => ({ id: product.id, ...product.data() })),
+				),
+			);
+		} else {
+			getDocs(queryCollection).then((res) =>
+				setData(
+					res.docs.map((product) => ({ id: product.id, ...product.data() })),
+				),
+			);
+		}
+	}, [categoriaId]);
 
 
   

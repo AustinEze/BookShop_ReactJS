@@ -11,6 +11,9 @@ export const Categorias = () => {
             <li>
                 <NavLink className='categoria-item' to='/categoria/Policiales-Oscuros'>Policiales/Oscuros</NavLink>
             </li>
+            <li>
+                <NavLink className='categoria-item' to='/categoria/Salud-bienestar'>Salud/Bienestar</NavLink>
+            </li>
         </ul>
     </div>
   )
