@@ -4,11 +4,10 @@ import { useCartContext } from './CartContext'
 import { Link } from 'react-router-dom'
 import ItemCart from './ItemCart'
 
-
 const Cart = () => {
   const { cart, totalPrice } = useCartContext();
 
-  const order = {
+  const saleInfo = {
     buyer: {
       name: 'Agustín',
       email: 'Agus@gmail.com',
@@ -21,9 +20,8 @@ const Cart = () => {
 
   const handleClick = () => {
     const db = getFirestore();
-    const ordersCollection = collection(db, 'orders');
-    addDoc(ordersCollection, order)
-      .then(({id}) => console.log(id))
+    const salesCollection = collection(db, 'sales');
+    addDoc(salesCollection, {...saleInfo,}).then(({id}) => console.log(id))
   }
 
 
@@ -35,7 +33,7 @@ const Cart = () => {
       </>
     )
   }
-  
+
 
   return (
     <>
