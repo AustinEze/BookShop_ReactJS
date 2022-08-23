@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className='h3-firma'>
             <h3 className='footer-icon'>Designed by AustinDev 2022.</h3>
             <div className='footer-icon-container'>
-                <a href="https://twitter.com/AustinDev_?t=dtEoxgzUPBW3-8Ot8G1LDA&s=09"  target='_blank' className='footer-icon'> <GrInstagram /> </a>
+                <a href="https://www.instagram.com/austindev_/"  target='_blank' className='footer-icon'> <GrInstagram /> </a>
                 <a href="https://twitter.com/AustinDev_?t=dtEoxgzUPBW3-8Ot8G1LDA&s=09"  target='_blank' className='footer-icon'> <GrTwitter /> </a>
                 <a href="https://www.linkedin.com/in/agust%C3%ADn-martearena-5a6820235/"    target='_blank' className='footer-icon'> <GrLinkedin /> </a>
                 <a href="https://github.com/AustinEze/" className='footer-icon'> <GrGithub /> </a>
