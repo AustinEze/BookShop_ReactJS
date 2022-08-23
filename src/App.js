@@ -6,6 +6,7 @@ import Cart from './components/Cart'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import Categorias from './components/Categorias'
 import CartProvider from './components/CartContext'
+import Footer from './components/footer'
 
 function App() {
   const onAdd = (param) => { console.log('La cantidad comprada es de: ' + param) }
@@ -25,11 +26,9 @@ function App() {
             <Route path='/cart' element={<Cart />}/>
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer />}/>
           </Routes>
-        </CartProvider>
-        
-
-        
+        </CartProvider>        
       </BrowserRouter>
+      <Footer />
     </div>
       
       
