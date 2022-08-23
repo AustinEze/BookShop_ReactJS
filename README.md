@@ -9,10 +9,13 @@ Este proyecto fue creado basandose en un e-commerce de Ebooks o libros digitales
 
 3) Salud/Bienestar: Este genero va dirigido a la parte "espiritual" y fisica de las personas, tratando de brindar buenos conocimientos acerca de nuestra mente, nuestra salud y cuidado personal.
 
-# Librerias usadas por mi cuenta (No requeridas en el proyecto) siendo todas instaladas mediante npm
-1) React Icons (https://react-icons.github.io/react-icons) 
+# Dependencias incluidas por mi cuenta (No requeridas en el proyecto) siendo todas instaladas mediante npm
 
-2) React slider (https://www.npmjs.com/package/react-slider)
+1) Npm (https://www.npmjs.com/)
+
+2) React Icons (https://react-icons.github.io/react-icons) 
+
+3) React slider (https://www.npmjs.com/package/react-slider)
 
 # Mi reseña personal
 
