@@ -1,3 +1,25 @@
+# Aclaracion (Disclaimer)
+El contenido multimedia mostrado en la página no me pertenece, fue implementado con el fin de poner en practica mis conocimientos adquiridos estos meses con el framework ReactJs, solo con motivos de estudio.
+
+# Descripción del proyecto
+Este proyecto fue creado basandose en un e-commerce de Ebooks o libros digitales, este e-commerce tiene productos que se dividen en tres categorias o generos: 
+1) Policiales/Oscuros: Este genero se compone principalmente de historias policiales, thriller, suspenso y terror.
+
+2) Emprendimiento: Este genero tiene especial foco en ofrecer libros que puedan brindar conocimiento sobre los temas de ingresos, inteligencia emocional, dinamicas sociales y psicología del exito.
+
+3) Salud/Bienestar: Este genero va dirigido a la parte "espiritual" y fisica de las personas, tratando de brindar buenos conocimientos acerca de nuestra mente, nuestra salud y cuidado personal.
+
+# Librerias usadas por mi cuenta (No requeridas en el proyecto) siendo todas instaladas mediante npm
+1) React Icons (https://react-icons.github.io/react-icons) 
+
+2) React slider (https://www.npmjs.com/package/react-slider)
+
+# Mi reseña personal
+
+Considero personalmente que hacer este proyecto fue muy importante para mi y un auténtico desafio a la par que placentero por los conocimientos que he adquirido hasta el momento. En lo personal, doy mucha importancia a la estabilidad emocional de las personas, y al cuidado de uno mismo en todos y en cada uno de los aspectos, es por eso mismo que he decidido optar por un e-commerce de libros digitales, no hay nada mejor que un buen libro del cual podamos adquirir el conocimiento necesario para encarar y mejorar cada día más nuestra vida, sin más, espero les guste y mis redes estarán apareciendo en el pie de la página. 
+
+AustinEz Dev.- 2022
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
